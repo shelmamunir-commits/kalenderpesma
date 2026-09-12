@@ -1,10 +1,10 @@
 "use client";
 
 import { BookOpenText, Menu, X } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import { LogoImg } from "./LogoImg";
 
 const NAV = [
   { href: "/", label: "Beranda" },
@@ -21,14 +21,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-40 border-b border-sand bg-cream/85 backdrop-blur">
       <nav className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-2.5 sm:px-6">
         <Link href="/" className="flex items-center gap-2" onClick={() => setBuka(false)}>
-          <Image
-            src="/logo.jpeg"
-            alt="Logo Pesma Nur Alannur"
-            width={28}
-            height={28}
-            className="h-7 w-7 rounded-md object-cover"
-            priority
-          />
+          <LogoImg size={28} eager className="h-7 w-7 rounded-md object-cover" />
           <span className="text-[15px] font-semibold tracking-tight text-ink">
             Pesma Nur Alannur
           </span>

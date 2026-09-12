@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
+import { LogoImg } from "./LogoImg";
 
 export default function Footer() {
   return (
@@ -7,13 +7,7 @@ export default function Footer() {
       <div className="mx-auto grid max-w-6xl gap-8 px-4 py-10 sm:px-6 md:grid-cols-3">
         <div>
           <p className="flex items-center gap-2 text-[15px] font-semibold tracking-tight text-ink">
-            <Image
-              src="/logo.jpeg"
-              alt="Logo Pesma Nur Alannur"
-              width={24}
-              height={24}
-              className="h-6 w-6 rounded-md object-cover"
-            />
+            <LogoImg size={24} className="h-6 w-6 rounded-md object-cover" />
             Pesma Nur Alannur
           </p>
           <p className="mt-2 max-w-xs text-sm leading-relaxed text-ink-soft">

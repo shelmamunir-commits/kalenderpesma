@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { BASE_PATH } from "@/components/LogoImg";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import "./globals.css";
@@ -18,8 +19,9 @@ export const metadata: Metadata = {
   description:
     "Kalender kegiatan, program insidentil, dan profil divisi Pesantren Mahasiswa (Pesma) Nur Alannur periode September–Desember 2026.",
   icons: {
-    icon: "/logo.jpeg",
-    apple: "/logo.jpeg",
+    // Manual prefix karena metadata icons tidak otomatis ikut basePath.
+    icon: `${BASE_PATH}/logo.jpeg`,
+    apple: `${BASE_PATH}/logo.jpeg`,
   },
 };
 
