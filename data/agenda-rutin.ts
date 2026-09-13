@@ -93,6 +93,15 @@ export const AGENDA_RUTIN: AgendaRutin[] = [
     deskripsi: "Pelatihan TEP setiap Senin malam di akhir bulan.",
   },
   {
+    id: "podcast-pesma",
+    nama: "Podcast Pesma",
+    waktu: "malam",
+    recurrence: { type: "monthly-last-weekday", dayOfWeek: 6 }, // Sabtu malam pekan terakhir (1x/bulan)
+    sie: "Humas",
+    deskripsi:
+      "Podcast Pesma setiap Sabtu malam di akhir bulan, membahas berbagai topik seputar kehidupan santriwati dan Pesma.",
+  },
+  {
     id: "sharing-teman",
     nama: "Sharing Bersama Teman Sharing",
     waktu: "malam",
