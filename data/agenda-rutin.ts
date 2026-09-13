@@ -97,7 +97,7 @@ export const AGENDA_RUTIN: AgendaRutin[] = [
     nama: "Podcast Pesma",
     waktu: "malam",
     recurrence: { type: "monthly-last-weekday", dayOfWeek: 6 }, // Sabtu malam pekan terakhir (1x/bulan)
-    sie: "Humas",
+    sie: "Media",
     deskripsi:
       "Podcast Pesma setiap Sabtu malam di akhir bulan, membahas berbagai topik seputar kehidupan santriwati dan Pesma.",
   },
