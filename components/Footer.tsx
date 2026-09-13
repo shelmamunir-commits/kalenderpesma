@@ -21,6 +21,7 @@ export default function Footer() {
             <li><Link className="text-ink-soft hover:text-ink" href="/kalender">Kalender Kegiatan</Link></li>
             <li><Link className="text-ink-soft hover:text-ink" href="/program-insidentil">Program Insidentil</Link></li>
             <li><Link className="text-ink-soft hover:text-ink" href="/divisi">Divisi / Sie</Link></li>
+            <li><Link className="text-ink-soft hover:text-ink" href="/struktur">Struktur & Tupoksi</Link></li>
           </ul>
         </nav>
         <div>

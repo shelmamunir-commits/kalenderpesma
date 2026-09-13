@@ -11,6 +11,7 @@ const NAV = [
   { href: "/kalender", label: "Kalender" },
   { href: "/program-insidentil", label: "Program Insidentil" },
   { href: "/divisi", label: "Divisi" },
+  { href: "/struktur", label: "Struktur" },
 ];
 
 export default function Navbar() {
