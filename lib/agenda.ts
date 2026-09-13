@@ -63,6 +63,7 @@ export function getAgendaForDate(
         sie: r.sie,
         waktu: r.waktu,
         deskripsi: r.deskripsi,
+        lokasi: r.lokasi,
       });
     }
   }
@@ -107,6 +108,7 @@ export function getAgendaMapForMonth(
         sie: r.sie,
         waktu: r.waktu,
         deskripsi: r.deskripsi,
+        lokasi: r.lokasi,
       });
       peta.set(iso, daftar);
     }

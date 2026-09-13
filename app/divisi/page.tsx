@@ -1,28 +1,44 @@
 import { Card, SectionHeading } from "@/components/ui";
 import { DAFTAR_SIE } from "@/data/sie";
-import { ArrowRight, BookOpenText, Brush, Megaphone, MoonStar, Sparkles } from "lucide-react";
+import {
+  ArrowRight,
+  BookOpenText,
+  HeartPulse,
+  Megaphone,
+  Mic,
+  MoonStar,
+  Shield,
+  Sparkles,
+  UtensilsCrossed,
+} from "lucide-react";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Divisi / Sie",
-  description: "Profil singkat lima sie Pesma Nur Alannur beserta program kerja masing-masing.",
+  title: "Divisi",
+  description: "Profil singkat tujuh divisi Pesma Nur Alannur beserta program kerja masing-masing — selaras struktur 2025/2026.",
 };
 
 const IKON: Record<string, typeof BookOpenText> = {
   pendidikan: BookOpenText,
-  ibadah: MoonStar,
+  "ibadah-phbi": MoonStar,
   kebersihan: Sparkles,
+  medkom: Mic,
+  "keamanan-sarpras": Shield,
+  konsumsi: UtensilsCrossed,
+  "kwu-kesehatan": HeartPulse,
+  // alias lama tetap didukung
+  ibadah: MoonStar,
   humas: Megaphone,
-  kreatif: Brush,
+  kreatif: HeartPulse,
 };
 
 export default function HalamanDivisi() {
   return (
     <div className="mx-auto max-w-6xl px-4 py-8 sm:px-6">
       <SectionHeading
-        kicker="Lima sie"
-        title="Divisi / Sie"
-        desc="Setiap sie menaungi sekelompok program rutin dan insidentil. Klik kartu untuk melihat daftar program kerja masing-masing sie."
+        kicker="Tujuh divisi · Periode 2025/2026"
+        title="Divisi"
+        desc="Setiap divisi menaungi sekelompok program rutin dan insidentil. Klik kartu untuk melihat daftar program kerja, anggota, dan tupoksi masing-masing divisi."
       />
       <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {DAFTAR_SIE.map((sie) => {

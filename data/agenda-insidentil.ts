@@ -96,7 +96,7 @@ export const AGENDA_INSIDENTIL: AgendaInsidentil[] = [
     tanggal: "2026-11-25",
     momentum: "Hari Guru Nasional",
     program: "Apresiasi untuk ustadzah, ustadz, dan pembina Pesma — kartu ucapan dan video penghargaan",
-    sie: "Pendidikan & Humas",
+    sie: "Pendidikan & Medkom",
     waktu: "malam",
     lokasi: "Aula Pesma",
   },
@@ -106,7 +106,7 @@ export const AGENDA_INSIDENTIL: AgendaInsidentil[] = [
     momentum: "Hari Ibu",
     program:
       'Kegiatan spesial menulis "Surat untuk Ibu", sharing tentang sosok ibu, dan campaign apresiasi ibu',
-    sie: "Humas & Pendidikan",
+    sie: "Medkom & Pendidikan",
     waktu: "malam",
     lokasi: "Aula Pesma",
   },
@@ -134,7 +134,7 @@ export const AGENDA_INSIDENTIL: AgendaInsidentil[] = [
     tanggal: null,
     momentum: "Saat Terjadi Musibah / Bencana",
     program: "Penggalangan dana dan penyaluran bantuan kemanusiaan",
-    sie: "Humas",
+    sie: "Medkom",
   },
   {
     id: "kon-03",

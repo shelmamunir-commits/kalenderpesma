@@ -1,8 +1,8 @@
 // ─────────────────────────────────────────────────────────────
-// Data sie (divisi) Pesma Nur Alannur.
-// Setiap sie punya 1 warna aksen konsisten untuk badge, kalender,
-// dan halaman sie. Kombinasi soft/ink memenuhi kontras WCAG AA
-// di atas background terang.
+// Data divisi Pesma Nur Alannur — periode 2025/2026.
+// Diselaraskan dengan struktur resmi (7 divisi) di data/struktur.ts.
+// Setiap divisi punya 1 warna aksen konsisten untuk badge, kalender,
+// dan halaman divisi. Palet pastel Notion, kontras WCAG AA.
 // ─────────────────────────────────────────────────────────────
 
 export interface Sie {
@@ -20,50 +20,91 @@ export interface Sie {
   programUmum: string[];
 }
 
-/* Palet pastel kalem ala tag Notion — tetap khas per sie. */
+/* Palet pastel kalem ala tag Notion — tetap khas per divisi. */
 export const DAFTAR_SIE: Sie[] = [
   {
-    slug: "pendidikan",
-    nama: "Sie Pendidikan",
-    singkatan: "Pendidikan",
+    slug: "ibadah-phbi",
+    nama: "Ibadah & PHBI",
+    singkatan: "Ibadah & PHBI",
     deskripsi:
-      "Mengawal seluruh kegiatan keilmuan dan pembinaan intelektual santri — dari kitaban harian, tahsin-tahfidz, diskusi, hingga peringatan hari-hari besar nasional.",
-    accent: "#3F5A3C",
-    soft: "#EDF3EC",
-    ink: "#3A5437",
-    programUmum: [
-      "Kajian tematik",
-      "Seminar/talkshow",
-      "Diskusi kepemudaan",
-      "Bedah buku",
-      "Peringatan Hari Santri",
-      "Peringatan Sumpah Pemuda",
-      "Peringatan Hari Pahlawan",
-      "Peringatan Hari Guru",
-      "Workshop/pelatihan",
-    ],
-  },
-  {
-    slug: "ibadah",
-    nama: "Sie Ibadah",
-    singkatan: "Ibadah",
-    deskripsi:
-      "Menjaga denyut ibadah santri — mengoordinasikan kegiatan ubudiyah harian, mingguan, dan momentum peringatan hari besar Islam (PHBI).",
+      "Menjaga denyut ibadah santri — mengontrol jamaah shalat, mengoordinir PHBI, jadwal imam, zikir & tahlil, Two Week One Juz, hingga kegiatan Ramadhan.",
     accent: "#6B5A1F",
     soft: "#F6F1DE",
     ink: "#66591F",
     programUmum: [
-      "Khataman Al-Qur'an",
-      "Doa bersama",
-      "Muhasabah",
-      "Kajian keislaman",
-      "Peringatan PHBI",
-      "Kegiatan ibadah bersama pada momentum tertentu",
+      "Kontrol jamaah shalat (Subuh, Maghrib, Isya')",
+      "Perencanaan & koordinasi PHBI",
+      "Jadwal imam",
+      "Zikir, yasin & tahlil",
+      "Two Week One Juz",
+      "Shalat sunnah berjamaah (taubat, hajat, witir)",
+      "Kegiatan Ramadhan (imam, bilal, kultum, i'tikaf, takjil)",
+      "Punishment kegiatan wajib",
+    ],
+  },
+  {
+    slug: "pendidikan",
+    nama: "Pendidikan",
+    singkatan: "Pendidikan",
+    deskripsi:
+      "Mengawal seluruh kegiatan keilmuan dan pembinaan intelektual santri — dari kitaban harian, tahsin-tahfidz, khotmil, malam Jumat, Syar'i Day, hingga pengembangan minat & bakat.",
+    accent: "#3F5A3C",
+    soft: "#EDF3EC",
+    ink: "#3A5437",
+    programUmum: [
+      "Kontrol ngaji Al-Qur'an & kitab",
+      "Kegiatan malam Jumat",
+      "Tahsin & tahfidz Qur'an",
+      "Khotmil Qur'an (Jumat–Minggu)",
+      "Kegiatan Ramadhan",
+      "Syar'i Day (Selasa)",
+      "Notulen ngaji kitab",
+      "Pengembangan seni & budaya",
+      "Pelatihan minat & bakat",
+      "Punishment pelanggar",
+    ],
+  },
+  {
+    slug: "medkom",
+    nama: "Media & Komunikasi (Medkom)",
+    singkatan: "Medkom",
+    deskripsi:
+      "Wajah Pesma ke luar — mengelola Instagram, dokumentasi, publikasi visual, konten media sosial, dan Podcast Pesma di Palm Spring.",
+    accent: "#3B5A7C",
+    soft: "#E9EFF5",
+    ink: "#375471",
+    programUmum: [
+      "Pengelolaan akun Instagram Pesma Nur Alannur",
+      "Kontrol postingan Instagram",
+      "Dokumentasi setiap kegiatan",
+      "Publikasi desain visual (pamflet, banner, sertifikat, poster)",
+      "Konten media sosial",
+      "Podcast Pesma — Sabtu malam pekan terakhir di Palm Spring",
+    ],
+  },
+  {
+    slug: "keamanan-sarpras",
+    nama: "Keamanan & Sarana Prasarana",
+    singkatan: "Keamanan & Sarpras",
+    deskripsi:
+      "Menjaga ketertiban dan sarana — dari gerbang malam & parkir hingga perizinan pulang santri dan kondusifitas aula.",
+    accent: "#4B5A6A",
+    soft: "#EBEEF2",
+    ink: "#3A4756",
+    programUmum: [
+      "Kunci gerbang jam malam (22.00)",
+      "Pengawasan parkir & peraturan parkir",
+      "Pintu garasi terkunci malam hari",
+      "Perizinan pulang santri",
+      "Peneguran santri gaduh lewat jam malam",
+      "Aula kondusif & santri di kamar 22.30 WIB",
+      "Kontrol & laporan sarana-prasarana",
+      "Punishment pelanggar",
     ],
   },
   {
     slug: "kebersihan",
-    nama: "Sie Kebersihan",
+    nama: "Kebersihan",
     singkatan: "Kebersihan",
     deskripsi:
       "Menjaga kebersihan dan kerapian lingkungan Pesma — dari roan rutin per lantai hingga kerja bakti besar menjelang dan pasca acara.",
@@ -71,49 +112,60 @@ export const DAFTAR_SIE: Sie[] = [
     soft: "#E6F2F0",
     ink: "#2C5954",
     programUmum: [
-      "Kerja bakti menjelang acara besar",
-      "Bersih-bersih pascaacara",
+      "Tanggung jawab kebersihan seluruh Pesma",
+      "Jadwal piket & ro'an",
+      "Pengingat petugas piket",
+      "Tata tertib kebersihan",
+      "Pengadaan perlengkapan kebersihan",
       "Lomba kebersihan kamar",
-      "Penataan lingkungan Pesma",
-      "Gerakan peduli lingkungan",
+      "Punishment pelanggar",
     ],
   },
   {
-    slug: "humas",
-    nama: "Sie Humas",
-    singkatan: "Humas",
+    slug: "konsumsi",
+    nama: "Konsumsi",
+    singkatan: "Konsumsi",
     deskripsi:
-      "Wajah Pesma ke luar — mengelola publikasi, dokumentasi, campaign apresiasi, penggalangan dana, bakti sosial, dan kolaborasi dengan pihak luar.",
-    accent: "#3B5A7C",
-    soft: "#E9EFF5",
-    ink: "#375471",
+      "Mengelola dapur dan pangan santri — dari piket masak, kas makan, hingga kebersihan dapur & alat masak.",
+    accent: "#8A5A2B",
+    soft: "#FDF0E6",
+    ink: "#7A4F25",
     programUmum: [
-      "Campaign Hari Ibu",
-      "Publikasi kegiatan hari besar",
-      "Penggalangan dana",
-      "Bakti sosial",
-      "Kolaborasi dengan pihak luar",
-      "Dokumentasi dan publikasi kegiatan insidentil",
+      "Jadwal piket masak",
+      "Pengelolaan kas makan",
+      "Penyediaan beras, minyak, gula & kebutuhan pokok",
+      "Kebersihan dapur, area makan & kulkas",
+      "Tata tertib & sanksi dapur",
+      "Alat masak & jadwal roan dapur",
     ],
   },
   {
-    slug: "kreatif",
-    nama: "Sie Kreatif / Kesenian",
-    singkatan: "Kreatif",
+    slug: "kwu-kesehatan",
+    nama: "KWU & Kesehatan",
+    singkatan: "KWU & Kesehatan",
     deskripsi:
-      "Merawat sisi seni dan kreativitas santri — dari pentas seni, dekorasi acara, desain publikasi, hingga persembahan khusus Milad Pesma.",
-    accent: "#8A4A2B",
-    soft: "#F5E9E3",
-    ink: "#7C4526",
+      "Menggerakkan kewirausahaan dan kesehatan — dari jual-beli kebutuhan santri & Wi-Fi hingga obat-obatan, penghijauan balkon, dan senam Jumat.",
+    accent: "#2F6B55",
+    soft: "#E6F2EC",
+    ink: "#2A5C4A",
     programUmum: [
-      "Lomba dalam peringatan hari besar",
-      "Pentas seni",
-      "Dekorasi acara",
-      "Desain publikasi",
-      "Persembahan Milad Pesma",
+      "Penjualan kebutuhan santri & kontrol jual-beli",
+      "Pencatatan laba (untuk Wi-Fi Pesma)",
+      "Pemantauan kesehatan & obat-obatan pokok",
+      "Perawatan santri sakit",
+      "Penghijauan balkon & tanaman",
+      "Senam tiap Jumat",
+      "Punishment pelanggar",
     ],
   },
 ];
+
+// Alias untuk backward-compat URL lama (/divisi/humas, /divisi/kreatif, /divisi/ibadah)
+export const ALIAS_SLUG: Record<string, string> = {
+  ibadah: "ibadah-phbi",
+  humas: "medkom",
+  kreatif: "kwu-kesehatan",
+};
 
 /** Warna netral untuk agenda lintas-sie ("Seluruh Sie / Kepanitiaan"). */
 export const SIE_BERSAMA = {
@@ -125,13 +177,28 @@ export const SIE_BERSAMA = {
 };
 
 export function getSieBySlug(slug: string): Sie | undefined {
-  return DAFTAR_SIE.find((s) => s.slug === slug);
+  const normalized = ALIAS_SLUG[slug] ?? slug;
+  return DAFTAR_SIE.find((s) => s.slug === normalized);
 }
 
 /** Warna badge untuk sebuah nama sie (mendukung "A & B" dan "Seluruh Sie"). */
 export function getSieColor(namaSie: string): { accent: string; soft: string; ink: string } {
+  // Cocok langsung via nama/singkatan/alias
   const sie = DAFTAR_SIE.find((s) => s.nama === namaSie || s.singkatan === namaSie);
   if (sie) return { accent: sie.accent, soft: sie.soft, ink: sie.ink };
+  // Alias nama lama -> warna baru
+  if (/^humas$/i.test(namaSie)) {
+    const medkom = DAFTAR_SIE.find((s) => s.slug === "medkom")!;
+    return { accent: medkom.accent, soft: medkom.soft, ink: medkom.ink };
+  }
+  if (/^(kreatif|kesenian)/i.test(namaSie)) {
+    const kwu = DAFTAR_SIE.find((s) => s.slug === "kwu-kesehatan")!;
+    return { accent: kwu.accent, soft: kwu.soft, ink: kwu.ink };
+  }
+  if (/^ibadah$/i.test(namaSie) && !/phbi/i.test(namaSie)) {
+    const ib = DAFTAR_SIE.find((s) => s.slug === "ibadah-phbi")!;
+    return { accent: ib.accent, soft: ib.soft, ink: ib.ink };
+  }
   if (/seluruh/i.test(namaSie)) return SIE_BERSAMA;
   // Gabungan beberapa sie ("Pendidikan & Ibadah") → pakai warna sie pertama.
   const pertama = namaSie.split("&")[0]?.trim() ?? "";
@@ -153,7 +220,7 @@ export function splitSie(namaSie: string): string[] {
  * Apakah sebuah nilai sie agenda (mis. "Pendidikan" atau
  * "Pendidikan & Ibadah") lolos daftar sie yang aktif di filter
  * (yang berisi nama lengkap seperti "Sie Pendidikan")?
- * Perbandingan toleran terhadap awalan "Sie ".
+ * Perbandingan toleran terhadap awalan "Sie " dan alias lama.
  */
 export function cocokFilterSie(nilaiAgenda: string, sieAktif: string[]): boolean {
   const diterima = new Set<string>();
@@ -163,9 +230,22 @@ export function cocokFilterSie(nilaiAgenda: string, sieAktif: string[]): boolean
     if (sie) {
       diterima.add(sie.nama);
       diterima.add(sie.singkatan);
+      // Alias lama juga diterima
+      if (sie.slug === "medkom") { diterima.add("Humas"); diterima.add("Media"); }
+      if (sie.slug === "ibadah-phbi") diterima.add("Ibadah");
     } else {
       diterima.add(aktif.replace(/^Sie\s+/i, ""));
     }
+    // Terima alias lama di filter
+    if (/^humas$/i.test(aktif)) diterima.add("Medkom");
+    if (/^media$/i.test(aktif)) diterima.add("Medkom");
   }
-  return splitSie(nilaiAgenda).some((s) => diterima.has(s));
+  // Normalisasi nilai agenda: Humas/Media -> Medkom, Ibadah -> Ibadah & PHBI
+  const normalisasi = (s: string) => {
+    if (/^humas$/i.test(s) || /^media$/i.test(s)) return "Medkom";
+    if (/^ibadah$/i.test(s)) return "Ibadah & PHBI";
+    if (/^kreatif/i.test(s)) return "KWU & Kesehatan";
+    return s;
+  };
+  return splitSie(nilaiAgenda).some((s) => diterima.has(s) || diterima.has(normalisasi(s)));
 }

@@ -104,6 +104,7 @@ export const DIVISI: DivisiOrg[] = [
       "Mendokumentasikan setiap kegiatan untuk dipublikasikan",
       "Membuat publikasi desain visual (pamflet, banner, sertifikat, poster ucapan, dll.)",
       "Membuat konten menarik untuk media sosial",
+      "Menyelenggarakan Podcast Pesma tiap Sabtu malam pekan terakhir di Palm Spring",
     ],
   },
   {

@@ -22,6 +22,7 @@ export interface AgendaRutin {
   recurrence: Recurrence;
   sie: string; // penanggung jawab (nama sie, mis. "Pendidikan")
   deskripsi?: string;
+  lokasi?: string;
 }
 
 export const AGENDA_RUTIN: AgendaRutin[] = [
@@ -71,7 +72,7 @@ export const AGENDA_RUTIN: AgendaRutin[] = [
     nama: "Infaq",
     waktu: "malam",
     recurrence: { type: "weekly", dayOfWeek: 4 }, // setiap Kamis malam, bersamaan Tahlil/Diba'
-    sie: "Ibadah",
+    sie: "Ibadah & PHBI",
     deskripsi: "Pengumpulan infaq rutin bersamaan dengan Tahlil/Diba'.",
   },
   {
@@ -81,7 +82,7 @@ export const AGENDA_RUTIN: AgendaRutin[] = [
     nama: "Sholat Hajat + Taubat",
     waktu: "malam",
     recurrence: { type: "monthly-nth-weekday", nthInMonth: 1, dayOfWeek: 4 },
-    sie: "Ibadah",
+    sie: "Ibadah & PHBI",
     deskripsi: "Sholat hajat dan taubat bersama, 1x sebulan (Kamis malam minggu pertama).",
   },
   {
@@ -96,10 +97,11 @@ export const AGENDA_RUTIN: AgendaRutin[] = [
     id: "podcast-pesma",
     nama: "Podcast Pesma",
     waktu: "malam",
-    recurrence: { type: "monthly-last-weekday", dayOfWeek: 6 }, // Sabtu malam pekan terakhir (1x/bulan)
-    sie: "Media",
+    recurrence: { type: "monthly-last-weekday", dayOfWeek: 6 }, // Sabtu malam pekan terakhir di setiap bulan
+    sie: "Medkom",
     deskripsi:
-      "Podcast Pesma setiap Sabtu malam di akhir bulan, membahas berbagai topik seputar kehidupan santriwati dan Pesma.",
+      "Podcast Pesma — produksi divisi Media & Komunikasi, rekaman tiap Sabtu malam pekan terakhir membahas kehidupan santriwati dan Pesma.",
+    lokasi: "Palm Spring",
   },
   {
     id: "sharing-teman",
@@ -123,7 +125,7 @@ export const AGENDA_RUTIN: AgendaRutin[] = [
     nama: "Khotmil Qur'an",
     waktu: "malam",
     recurrence: { type: "weekly", dayOfWeek: 5 },
-    sie: "Ibadah",
+    sie: "Ibadah & PHBI",
     deskripsi: "Khotmil Qur'an setiap Jumat malam.",
   },
   {
@@ -131,7 +133,7 @@ export const AGENDA_RUTIN: AgendaRutin[] = [
     nama: "Khotmil Qur'an",
     waktu: "malam",
     recurrence: { type: "weekly", dayOfWeek: 6 },
-    sie: "Ibadah",
+    sie: "Ibadah & PHBI",
     deskripsi: "Khotmil Qur'an setiap Sabtu malam.",
   },
   {
@@ -139,7 +141,7 @@ export const AGENDA_RUTIN: AgendaRutin[] = [
     nama: "Khotmil Qur'an",
     waktu: "malam",
     recurrence: { type: "weekly", dayOfWeek: 0 },
-    sie: "Ibadah",
+    sie: "Ibadah & PHBI",
     deskripsi: "Khotmil Qur'an setiap Minggu malam.",
   },
 ];
