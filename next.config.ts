@@ -9,6 +9,7 @@ const nextConfig: NextConfig = {
   // Berlaku saat build production agar aset & route ter-prefix
   // /kalenderpesma. Saat dev lokal (npm run dev) tetap di root.
   basePath: isProd ? "/kalenderpesma" : undefined,
+  trailingSlash: true,
   images: {
     // next/image optimization server tidak tersedia di Pages.
     unoptimized: true,
